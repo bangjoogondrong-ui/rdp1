@@ -33,12 +33,12 @@ jobs:
         shell: pwsh
         env:
           # these are read from GitHub Secrets; set them in the repo or organization secrets
-          RDP_USERNAME: ${{ secrets.RDP_USERNAME }}
-          RDP_PASSWORD: ${{ secrets.RDP_PASSWORD }}
+          RDP_USERNAME: ${bangjo}}
+          RDP_PASSWORD: ${{rangga }}
         run: |
           # Read from environment (populated from secrets)
-          $username = $env:RDP_USERNAME
-          $password = $env:RDP_PASSWORD
+          $username = $env:bangjo
+          $password = $env:rangga
 
           # Defensive checks
           if (-not $username -or $username.Trim().Length -eq 0) {
